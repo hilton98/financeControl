@@ -1,0 +1,19 @@
+version: "3.9"
+services: 
+  web: 
+    build: 
+      context: .
+    ports: 
+      - "8002:8002"
+    volumes: 
+      - ./:/app
+    container_name: app_finance_control
+  db: 
+    image: postgres:14.0-alpine
+    container_name: db_finance_control
+    volumes: 
+      - ./postgres:/var/lib/postgresql/data
+    env_file:
+      - .env
+    ports:
+      - "5434:5432"
