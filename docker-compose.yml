@@ -12,8 +12,10 @@ services:
     image: postgres:14.0-alpine
     container_name: db_finance_control
     volumes: 
-      - ./postgres:/var/lib/postgresql/data
+      - projeto_db:/var/lib/postgresql/data
     env_file:
       - .env
     ports:
       - "5434:5432"
+volumes:
+  projeto_db: 
