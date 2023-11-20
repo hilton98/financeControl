@@ -1,0 +1,38 @@
+[
+    {
+        "model":"financial.institution",
+        "fields":{
+            "id": 1,
+            "name": "Banco do Brasil",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"financial.institution",
+        "fields":{
+            "id": 2,
+            "name": "Banco Santander",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"financial.institution",
+        "fields":{
+            "id": 3,
+            "name": "Nubank",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"financial.institution",
+        "fields":{
+            "id": 4,
+            "name": "PicPay",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    }
+]

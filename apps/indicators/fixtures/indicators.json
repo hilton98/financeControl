@@ -1,0 +1,91 @@
+[
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 1,
+            "name": "In process",
+            "description": "O procedimento está em execução, em aberto.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 2,
+            "name": "Pending",
+            "description": "O procedimento precisa de algum recurso ou aceite para destravar o fluxo.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 3,
+            "name": "Concluded",
+            "description": "O procedimento foi finalizado corretamente.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 4,
+            "name": "Email",
+            "description": "O contato é do tipo E-mail.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 5,
+            "name": "Phone",
+            "description": "O contato é um número de celular pessoal.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 6,
+            "name": "Main",
+            "description": "Representa o item ou opção principal do usuário.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 7,
+            "name": "Updated",
+            "description": "Representa que algo sofreu uma alteração.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 8,
+            "name": "Updated",
+            "description": "Representa que algo sofreu uma alteração.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+
+    },
+    {
+        "model":"indicators.flag",
+        "fields":{
+            "id": 9,
+            "name": "Activated",
+            "description": "Representa que algo está ativo, disponível.",
+            "creation_dt": "2023-11-20 18:53:30.806 -0300"
+        }
+    }
+]
