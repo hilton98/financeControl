@@ -1,4 +1,4 @@
-from apps.financial.repositories.institution_repository import InsttitutionRepository
+from apps.financial.repositories.institution_repository import InstitutionRepository
 from apps.financial.usecases.get_institution import GetInstitution
 from rest_framework import status
 from rest_framework.views import APIView
@@ -8,7 +8,7 @@ class Institution(APIView):
     def get(self, request):
         try:
             name = request.query_params.get("name", None)
-            institution_repository = InsttitutionRepository()
+            institution_repository = InstitutionRepository()
             get_institutions = GetInstitution(institution_repository)
             response = get_institutions.execute(name)
             return Response(response)
