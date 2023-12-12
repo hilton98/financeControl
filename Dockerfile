@@ -4,6 +4,7 @@ RUN pip install psycopg2-binary
 RUN pip install python-dotenv
 RUN pip install django
 RUN pip install djangorestframework
+RUN pip install djangorestframework djangorestframework-simplejwt
 RUN pip install markdown
 RUN pip install django-filter 
 COPY . /app  
