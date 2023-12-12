@@ -7,6 +7,7 @@ RUN pip install djangorestframework
 RUN pip install djangorestframework djangorestframework-simplejwt
 RUN pip install markdown
 RUN pip install django-filter 
+RUN pip install drf-yasg
 COPY . /app  
 WORKDIR /app 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8002"]
