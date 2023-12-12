@@ -26,8 +26,8 @@ class CreateAccount:
             )
             if user_created:
                 user_id = user_created.pk
-                status_is_concluded = 3
-                post_data["status"] = status_is_concluded
+                status_is_activated = 9
+                post_data["status"] = status_is_activated
                 post_data["user"] = user_id
                 person_created = self.person_repository.create(post_data)
                 data = self.generate_data_to_response(
