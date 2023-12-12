@@ -15,3 +15,15 @@ class UserRepository(UserRepositoryInterface):
             raise ValidationError(user_serializer_instance.errors)
         user_created = User.objects.create_user(**kwargs)
         return user_created
+    
+    def get_by_email(self, email_address):
+        user_model = User.objects.filter(email=email_address)
+        if user_model:
+            return user_model.first()
+        raise ValueError(f"No user found with email address {email_address}")
+    
+    def get_by_id(self, id):
+        user_model = User.objects.filter(pk=id)
+        if user_model:
+            return user_model.first()
+        raise ValueError(f"No user found with id {id}")
